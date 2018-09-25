@@ -2,7 +2,7 @@ import React from 'react'
 import { Form, Table } from 'semantic-ui-react'
 import axios from 'axios'
 
-const citties = [
+const Citties = [
   'Sandy',
   'Draper',
   'SLC',
@@ -14,9 +14,9 @@ const citties = [
   'Murray'
 ]
 
-const options = citties.map( c => { return { key: c, text: c, value: c }} )
+const options = Citties.map( c => { return { key: c, text: c, value: c }} )
 
-class citties extends React.Component {
+class Citties extends React.Component {
   state = { city: null, properties: [], page: 1, total_pages: 0 }
 
   handleChange = (e, { value }) => {
@@ -64,4 +64,4 @@ class citties extends React.Component {
   }
 }
 
-export default citties
+export default Citties

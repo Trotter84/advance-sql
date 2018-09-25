@@ -10,7 +10,7 @@ import ProtectedRoute from './ProtectedRoute';
 import AuthRoute from './AuthRoute';
 import FetchUser from './FetchUser';
 import Available from './Available';
-import citties from './citties';
+import Citties from './Citties';
 import FindHome from './FindHome';
 
 class App extends Component {
@@ -23,7 +23,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/available' component={Available} />
-            <Route exact path='/citties' component={citties} />
+            <Route exact path='/Citties' component={Citties} />
             <Route exact path='/find_home' component={FindHome} />
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
